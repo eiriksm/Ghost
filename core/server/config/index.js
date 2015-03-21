@@ -193,7 +193,7 @@ ConfigManager.prototype.set = function (config) {
 
             availableThemes:  this._config.paths.availableThemes || {},
             availableApps:    this._config.paths.availableApps || {},
-            clientAssets:     path.join(corePath, '/built/assets/')
+            clientAssets:     this._config.paths.clientAssets || path.join(corePath, '/built/assets/')
         },
         storage: {
             active: activeStorage
